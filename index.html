@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | devripon.io</title>
+  <link rel="stylesheet" href="./public/src/css/style.css">
+  <link rel="stylesheet" href="./public/src/css/custom.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2ab099f38c.js" crossorigin="anonymous"></script>
+</head>
+
+<body class=" h-screen w-screen overflow-x-hidden">
+  <div class="main-container">
+    <div id="main-woocommerce-header" class="w-full ">
+      <!-- top header -->
+      <div class="header-top w-full flex flex-wrap justify-center items-center gap-y-8 gap-x-20 bg-white py-4">
+        <div class="logo">
+          <a href="#" class="text-blue-700 font-extrabold text-4xl">devripon <span class="text-red-500">.shop</span></a>
+        </div>
+        <div class="search w-96 relative align-middle">
+          <input class="py-2 w-full  border-gray-200 border outline-none px-12 rounded-full" type="text"
+            placeholder="Search for products" name="search" id="search">
+          <i class="ri-search-2-line absolute right-8 align-middle top-2"></i>
+        </div>
+        <div class="contact-number flex justify-center items-center">
+          <div class="icon mr-4"><i class="ri-customer-service-2-line text-4xl text-blue-700"></i></div>
+          <div class="info text-xl text-gray-500"><a href="+880 1913-509868">+880 1913-509868</a></div>
+        </div>
+        <div class="email-address flex justify-center items-center">
+          <div class="icon mr-4"><i class="ri-mail-send-line text-4xl text-blue-700"></i></div>
+          <div class="info text-xl text-gray-500"><a href="+880 1913-509868">devripon.io@gmail.com</a></div>
+        </div>
+      </div>
+      <!-- bottom header -->
+      <div class="header-bottom static w-screen sm:px-10 px-72 bg-gray-100 py-1">
+        <!-- menu -->
+        <div class="menu w-10/12 mx-auto flex justify-between items-center flex-wrap gap-x-28">
+          <div class="menu-left">
+            <ul class="flex justify-center items-center gap-x-4 flex-wrap">
+              <li class="bg-white py-3 rounded-full pr-5"><a href="#"><i
+                    class="ri-bar-chart-horizontal-line text-white bg-blue-700 rounded-full p-3 mr-4 font-extrabold"></i>
+                  All
+                  Categories</a></li>
+              <li class="hover:bg-gray-300 hover:text-blue-700 transform duration-200 py-3 px-4 rounded-full">
+                <a href="">Promotions</a> </li>
+              <li class="hover:bg-gray-300 hover:text-blue-700 transform duration-200 py-3 px-4 rounded-full">
+                <a href="">Store</a> </li>
+              <li class="hover:bg-gray-300 hover:text-blue-700 transform duration-200 py-3 px-4 rounded-full">
+                <a href="">Our Contact</a> </li>
+              <li class="hover:bg-gray-300 hover:text-blue-700 transform duration-200 py-3 px-4 rounded-full">
+                <a href="">Delivery</a> </li>
+              <li class="hover:bg-gray-300 active hover:text-purple-900 transform duration-200 py-3 px-4 rounded-full">
+                <a href="">Outlet</a> </li>
+            </ul>
+          </div>
+          <div class="menu-right">
+            <ul class="flex justify-center items-center gap-x-4 flex-wrap">
+              <li class="hover:bg-gray-300 hover:text-blue-700 transform duration-200 py-3 px-4 rounded-full">
+                <a href=""><i class="ri-notification-4-line text-xl"></i></a> </li>
+              <li class="hover:bg-gray-300 hover:text-blue-700 transform duration-200 py-3 px-4 rounded-full">
+                <a href=""><i class="ri-heart-3-line text-xl"></i></a> </li>
+              <li class=" bg-blue-700 text-white transform duration-200 py-3 px-4 rounded-full">
+                <a href=""><i class="ri-shopping-cart-line text-xl"></i></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- woocommerce hero -->
+    <div id="woocommerce-hero-section" class=" mt-20">
+      <div class="hero-item bg-blue-600 w-9/12 m-auto flex justify-between items-center h-96 rounded-md">
+        <div class="left-side ml-8">
+          <h2 class="text-4xl text-white font-medium">Outlet Store</h2>
+          <p class="text-gray-400 mt-8">Here you will find discounted products that have been found to have minor
+            damage that
+            does not affect
+            performance.</p>
+          <div class="time flex justify-start mt-3 items-center gap-3 ">
+            <h3 class="day h-16 w-16 pt-2 text-center bg-white rounded-md text-gray-800 font-medium">04 <span
+                class="block"></span>
+              Days</span>
+            </h3>
+            <h3 class="day h-16 w-16 pt-2 text-center bg-white rounded-md text-gray-800 font-medium">02 <span
+                class="block">
+                Hr</span>
+            </h3>
+            <h3 class="day h-16 w-16 pt-2 text-center bg-white rounded-md text-gray-800 font-medium">44 <span
+                class="block">
+                Min</span>
+            </h3>
+            <h3 class="day h-16 w-16 pt-2 text-center bg-white rounded-md text-gray-800 font-medium">09 <span
+                class="block">
+                Sec</span>
+            </h3>
+          </div>
+        </div>
+        <div class="right-side">
+          <img
+            src="https://a6n4d3q9.rocketcdn.me/mega-electronics/wp-content/uploads/sites/9/2022/11/outlet-580x326.png"
+            alt="">
+        </div>
+      </div>
+    </div>
+    <!-- product section -->
+    <div id="product-section" class="w-9/12 m-auto block mt-20">
+      <a class="text-4xl mb-12 text-gray-700 font-medium" href="#">All Product</a>
+      <div class="products flex justify-center items-center flex-wrap">
+        <!-- single-item -->
+        <div
+          class="woocommerce-item overflow-hidden w-72 p-7 relative shadow-lg hover:shadow-2xl transform duration-300">
+          <div class="item-tag absolute left-2 flex justify-start flex-col gap-y-3">
+            <span class="text-white font-medium px-2 py-1 bg-yellow-500">New</span>
+            <span class="text-white font-medium px-2 py-1 bg-red-600 ">Hot</span>
+          </div>
+          <div class="product-view absolute">
+            <a href="#"> <i
+                class="ri-eye-line hover:bg-orange-500 hover:text-white bg-blue-400 p-3 rounded-full text-2xl"></i></a>
+          </div>
+          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
+            <img class="w-96"
+              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
+              alt="">
+          </div>
+          <div class="product-info mt-4">
+            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
+            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
+            <div class="stock flex justify-start gap-x-5">
+              <i class="ri-check-line text-blue-700"></i>
+              <p class="text-blue-700">In Stock</p>
+            </div>
+            <div class="price my-2 flex justify-between mr-20">
+              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
+                  class="amount">1900</span>
+              </p>
+              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
+            </div>
+            <button
+              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
+              To
+              Cart</button>
+            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
+          </div>
+        </div>
+        <!-- single-item -->
+        <div
+          class="woocommerce-item overflow-hidden w-72 p-7 relative shadow-lg hover:shadow-2xl transform duration-300">
+          <div class="item-tag absolute left-2 flex justify-start flex-col gap-y-3">
+            <span class="text-white font-medium px-2 py-1 bg-yellow-500">New</span>
+            <span class="text-white font-medium px-2 py-1 bg-red-600 ">Hot</span>
+          </div>
+          <div class="product-view absolute">
+            <a href="#"> <i
+                class="ri-eye-line hover:bg-orange-500 hover:text-white bg-blue-400 p-3 rounded-full text-2xl"></i></a>
+          </div>
+          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
+            <img class="w-96"
+              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
+              alt="">
+          </div>
+          <div class="product-info mt-4">
+            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
+            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
+            <div class="stock flex justify-start gap-x-5">
+              <i class="ri-check-line text-blue-700"></i>
+              <p class="text-blue-700">In Stock</p>
+            </div>
+            <div class="price my-2 flex justify-between mr-20">
+              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
+                  class="amount">1900</span>
+              </p>
+              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
+            </div>
+            <button
+              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
+              To
+              Cart</button>
+            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
+          </div>
+        </div>
+        <!-- single-item -->
+        <div
+          class="woocommerce-item overflow-hidden w-72 p-7 relative shadow-lg hover:shadow-2xl transform duration-300">
+          <div class="item-tag absolute left-2 flex justify-start flex-col gap-y-3">
+            <span class="text-white font-medium px-2 py-1 bg-yellow-500">New</span>
+            <span class="text-white font-medium px-2 py-1 bg-red-600 ">Hot</span>
+          </div>
+          <div class="product-view absolute">
+            <a href="#"> <i
+                class="ri-eye-line hover:bg-orange-500 hover:text-white bg-blue-400 p-3 rounded-full text-2xl"></i></a>
+          </div>
+          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
+            <img class="w-96"
+              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
+              alt="">
+          </div>
+          <div class="product-info mt-4">
+            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
+            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
+            <div class="stock flex justify-start gap-x-5">
+              <i class="ri-check-line text-blue-700"></i>
+              <p class="text-blue-700">In Stock</p>
+            </div>
+            <div class="price my-2 flex justify-between mr-20">
+              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
+                  class="amount">1900</span>
+              </p>
+              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
+            </div>
+            <button
+              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
+              To
+              Cart</button>
+            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
+          </div>
+        </div>
+        <!-- single-item -->
+        <div
+          class="woocommerce-item overflow-hidden w-72 p-7 relative shadow-lg hover:shadow-2xl transform duration-300">
+          <div class="item-tag absolute left-2 flex justify-start flex-col gap-y-3">
+            <span class="text-white font-medium px-2 py-1 bg-yellow-500">New</span>
+            <span class="text-white font-medium px-2 py-1 bg-red-600 ">Hot</span>
+          </div>
+          <div class="product-view absolute">
+            <a href="#"> <i
+                class="ri-eye-line hover:bg-orange-500 hover:text-white bg-blue-400 p-3 rounded-full text-2xl"></i></a>
+          </div>
+          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
+            <img class="w-96"
+              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
+              alt="">
+          </div>
+          <div class="product-info mt-4">
+            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
+            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
+            <div class="stock flex justify-start gap-x-5">
+              <i class="ri-check-line text-blue-700"></i>
+              <p class="text-blue-700">In Stock</p>
+            </div>
+            <div class="price my-2 flex justify-between mr-20">
+              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
+                  class="amount">1900</span>
+              </p>
+              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
+            </div>
+            <button
+              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
+              To
+              Cart</button>
+            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
+          </div>
+        </div>
+        <!-- single-item -->
+        <div
+          class="woocommerce-item overflow-hidden w-72 p-7 relative shadow-lg hover:shadow-2xl transform duration-300">
+          <div class="item-tag absolute left-2 flex justify-start flex-col gap-y-3">
+            <span class="text-white font-medium px-2 py-1 bg-yellow-500">New</span>
+            <span class="text-white font-medium px-2 py-1 bg-red-600 ">Hot</span>
+          </div>
+          <div class="product-view absolute">
+            <a href="#"> <i
+                class="ri-eye-line hover:bg-orange-500 hover:text-white bg-blue-400 p-3 rounded-full text-2xl"></i></a>
+          </div>
+          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
+            <img class="w-96"
+              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
+              alt="">
+          </div>
+          <div class="product-info mt-4">
+            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
+            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
+            <div class="stock flex justify-start gap-x-5">
+              <i class="ri-check-line text-blue-700"></i>
+              <p class="text-blue-700">In Stock</p>
+            </div>
+            <div class="price my-2 flex justify-between mr-20">
+              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
+                  class="amount">1900</span>
+              </p>
+              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
+            </div>
+            <button
+              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
+              To
+              Cart</button>
+            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
+          </div>
+        </div>
+        <!-- single-item -->
+        <div
+          class="woocommerce-item overflow-hidden w-72 p-7 relative shadow-lg hover:shadow-2xl transform duration-300">
+          <div class="item-tag absolute left-2 flex justify-start flex-col gap-y-3">
+            <span class="text-white font-medium px-2 py-1 bg-yellow-500">New</span>
+            <span class="text-white font-medium px-2 py-1 bg-red-600 ">Hot</span>
+          </div>
+          <div class="product-view absolute">
+            <a href="#"> <i
+                class="ri-eye-line hover:bg-orange-500 hover:text-white bg-blue-400 p-3 rounded-full text-2xl"></i></a>
+          </div>
+          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
+            <img class="w-96"
+              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
+              alt="">
+          </div>
+          <div class="product-info mt-4">
+            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
+            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
+            <div class="stock flex justify-start gap-x-5">
+              <i class="ri-check-line text-blue-700"></i>
+              <p class="text-blue-700">In Stock</p>
+            </div>
+            <div class="price my-2 flex justify-between mr-20">
+              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
+                  class="amount">1900</span>
+              </p>
+              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
+            </div>
+            <button
+              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
+              To
+              Cart</button>
+            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
+          </div>
+        </div>
+        <!-- single-item -->
+        <div
+          class="woocommerce-item overflow-hidden w-72 p-7 relative shadow-lg hover:shadow-2xl transform duration-300">
+          <div class="item-tag absolute left-2 flex justify-start flex-col gap-y-3">
+            <span class="text-white font-medium px-2 py-1 bg-yellow-500">New</span>
+            <span class="text-white font-medium px-2 py-1 bg-red-600 ">Hot</span>
+          </div>
+          <div class="product-view absolute">
+            <a href="#"> <i
+                class="ri-eye-line hover:bg-orange-500 hover:text-white bg-blue-400 p-3 rounded-full text-2xl"></i></a>
+          </div>
+          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
+            <img class="w-96"
+              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
+              alt="">
+          </div>
+          <div class="product-info mt-4">
+            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
+            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
+            <div class="stock flex justify-start gap-x-5">
+              <i class="ri-check-line text-blue-700"></i>
+              <p class="text-blue-700">In Stock</p>
+            </div>
+            <div class="price my-2 flex justify-between mr-20">
+              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
+                  class="amount">1900</span>
+              </p>
+              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
+            </div>
+            <button
+              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
+              To
+              Cart</button>
+            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
+          </div>
+        </div>
+        <!-- single-item -->
+        <div
+          class="woocommerce-item overflow-hidden w-72 p-7 relative shadow-lg hover:shadow-2xl transform duration-300">
+          <div class="item-tag absolute left-2 flex justify-start flex-col gap-y-3">
+            <span class="text-white font-medium px-2 py-1 bg-yellow-500">New</span>
+            <span class="text-white font-medium px-2 py-1 bg-red-600 ">Hot</span>
+          </div>
+          <div class="product-view absolute">
+            <a href="#"> <i
+                class="ri-eye-line hover:bg-orange-500 hover:text-white bg-blue-400 p-3 rounded-full text-2xl"></i></a>
+          </div>
+          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
+            <img class="w-96"
+              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
+              alt="">
+          </div>
+          <div class="product-info mt-4">
+            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
+            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
+            <div class="stock flex justify-start gap-x-5">
+              <i class="ri-check-line text-blue-700"></i>
+              <p class="text-blue-700">In Stock</p>
+            </div>
+            <div class="price my-2 flex justify-between mr-20">
+              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
+                  class="amount">1900</span>
+              </p>
+              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
+            </div>
+            <button
+              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
+              To
+              Cart</button>
+            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
+          </div>
+        </div>
+        <!-- single-item -->
+        <div
+          class="woocommerce-item overflow-hidden w-72 p-7 relative shadow-lg hover:shadow-2xl transform duration-300">
+          <div class="item-tag absolute left-2 flex justify-start flex-col gap-y-3">
+            <span class="text-white font-medium px-2 py-1 bg-yellow-500">New</span>
+            <span class="text-white font-medium px-2 py-1 bg-red-600 ">Hot</span>
+          </div>
+          <div class="product-view absolute">
+            <a href="#"> <i
+                class="ri-eye-line hover:bg-orange-500 hover:text-white bg-blue-400 p-3 rounded-full text-2xl"></i></a>
+          </div>
+          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
+            <img class="w-96"
+              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
+              alt="">
+          </div>
+          <div class="product-info mt-4">
+            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
+            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
+            <div class="stock flex justify-start gap-x-5">
+              <i class="ri-check-line text-blue-700"></i>
+              <p class="text-blue-700">In Stock</p>
+            </div>
+            <div class="price my-2 flex justify-between mr-20">
+              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
+                  class="amount">1900</span>
+              </p>
+              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
+            </div>
+            <button
+              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
+              To
+              Cart</button>
+            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
+          </div>
+        </div>
+        <!-- single-item -->
+        <div
+          class="woocommerce-item overflow-hidden w-72 p-7 relative shadow-lg hover:shadow-2xl transform duration-300">
+          <div class="item-tag absolute left-2 flex justify-start flex-col gap-y-3">
+            <span class="text-white font-medium px-2 py-1 bg-yellow-500">New</span>
+            <span class="text-white font-medium px-2 py-1 bg-red-600 ">Hot</span>
+          </div>
+          <div class="product-view absolute">
+            <a href="#"> <i
+                class="ri-eye-line hover:bg-orange-500 hover:text-white bg-blue-400 p-3 rounded-full text-2xl"></i></a>
+          </div>
+          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
+            <img class="w-96"
+              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
+              alt="">
+          </div>
+          <div class="product-info mt-4">
+            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
+            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
+            <div class="stock flex justify-start gap-x-5">
+              <i class="ri-check-line text-blue-700"></i>
+              <p class="text-blue-700">In Stock</p>
+            </div>
+            <div class="price my-2 flex justify-between mr-20">
+              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
+                  class="amount">1900</span>
+              </p>
+              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
+            </div>
+            <button
+              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
+              To
+              Cart</button>
+            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
+          </div>
+        </div>
+        <!-- single-item -->
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./public/src/js/data.js"></script>
+  <script src="./public/src/js/functions.js"></script>
+  <script src="./public/src/js/index.js"></script>
+
+</body>
+
+</html>

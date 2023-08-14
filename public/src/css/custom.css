@@ -1,0 +1,23 @@
+.menu-left>ul>li.active {
+  background: rgba(120, 119, 121, 0.262) !important;
+  color: #0f21e5;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: thin !important;
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5361fdaf;
+  border-radius: 10px;
+  scrollbar-width: thin;
+
+}
+
+.product-view {
+  top: -25%;
+  left: 40%;
+  transition: 0.2s linear;
+}
