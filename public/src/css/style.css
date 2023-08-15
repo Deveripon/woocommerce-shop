@@ -869,8 +869,21 @@ video {
   height: 100vh;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-16 {
@@ -908,10 +921,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
 }
 
 .flex-shrink {
@@ -2840,10 +2849,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-8 {
-    width: 2rem;
-  }
-
   .sm\:w-9\/12 {
     width: 75%;
   }

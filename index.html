@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/2ab099f38c.js" crossorigin="anonymous"></script>
 </head>
 
-<body class=" h-screen w-screen overflow-x-hidden">
+<body class=" h-screen w-screen overflow-x-hidden overflow-y-scroll">
   <div class="main-container">
     <div id="main-woocommerce-header" class="w-full ">
       <!-- top header -->
@@ -111,7 +111,7 @@
       <div class="products mt-20 flex justify-center gap-5 items-center flex-wrap">
         <!-- single-item -->
         <div
-          class="woocommerce-item rounded-lg overflow-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
+          class="woocommerce-item rounded-lg overflow-x-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
           <div class="item-tag absolute left-2 mt-2 flex justify-start flex-col gap-y-3">
             <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-yellow-500">New</span>
             <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-red-600 ">Hot</span>
@@ -149,7 +149,7 @@
         </div>
         <!-- single-item -->
         <div
-          class="woocommerce-item rounded-lg overflow-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
+          class="woocommerce-item rounded-lg overflow-x-hidden overflow-y-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
           <div class="item-tag absolute left-2 mt-2 flex justify-start flex-col gap-y-3">
             <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-green-600 ">10% Discount</span>
           </div>
@@ -185,7 +185,7 @@
         </div>
         <!-- single item -->
         <div
-          class="woocommerce-item rounded-lg overflow-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
+          class="woocommerce-item rounded-lg overflow-x-hidden overflow-y-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
           <div class="item-tag absolute left-2 mt-2 flex justify-start flex-col gap-y-3">
             <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-green-600 ">10% Discount</span>
             <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-pink-600 ">Tranding</span>
@@ -222,7 +222,7 @@
         </div>
         <!-- single item -->
         <div
-          class="woocommerce-item rounded-lg overflow-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
+          class="woocommerce-item rounded-lg overflow-x-hidden overflow-y-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
           <div class="item-tag absolute left-2 mt-2 flex justify-start flex-col gap-y-3">
             <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-orange-600 ">Fetured</span>
           </div>
@@ -260,8 +260,8 @@
     </div>
 
     <!-- single-product-show-modal -->
-    <div id="modal" class="modal w-8/12">
-      <div class="modal-content">
+    <div id="modal" class="modal w-8/12 h-fit">
+      <div class="modal-content h-fit overflow-scroll">
         <span id="closeModalBtn" class="close">&times;</span>
         <div class="product-details w-full flex justify-between items-center flex-wrap flex-shrink">
           <div class="left-side lg:flex-1">
