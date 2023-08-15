@@ -17,7 +17,75 @@ body::-webkit-scrollbar-thumb {
 }
 
 .product-view {
-  top: -25%;
-  left: 40%;
+  height: 0%;
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.5);
   transition: 0.2s linear;
+  box-sizing: border-box;
+}
+
+.product-view.active {
+  height: 50%;
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.5);
+  transition: 0.2s linear;
+  box-sizing: border-box;
+}
+
+.product-view button {
+  position: relative;
+  top: 0%;
+  left: 39%;
+  display: none;
+}
+
+.product-view button.active {
+  position: relative;
+  top: 35%;
+  left: 39%;
+  display: block;
+}
+
+.woocommerce-item:hover {
+  transform: scale(1.01);
+}
+
+/* sindle product modal styling */
+/* Styles for modal container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Styles for modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 5px;
+  overflow: visible;
+}
+
+/* Styles for close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
