@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./public/src/css/custom.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/2ab099f38c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./public/src/css/main.css">
 </head>
 
 <body class=" h-screen w-screen overflow-x-hidden overflow-y-scroll">
@@ -108,9 +109,9 @@
     <!-- product section -->
     <div id="product-section" class="w-9/12 m-auto block mt-20">
       <a class="text-4xl mb-12 text-gray-700 font-medium" href="#">All Product</a>
-      <div class="products mt-20 flex justify-center gap-5 items-center flex-wrap">
+      <div id="productList" class="products mt-20 flex justify-center gap-5 items-center flex-wrap">
         <!-- single-item -->
-        <div
+        <!-- <div
           class="woocommerce-item rounded-lg overflow-x-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
           <div class="item-tag absolute left-2 mt-2 flex justify-start flex-col gap-y-3">
             <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-yellow-500">New</span>
@@ -146,184 +147,23 @@
               Cart</button>
             <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
           </div>
-        </div>
+        </div> -->
         <!-- single-item -->
-        <div
-          class="woocommerce-item rounded-lg overflow-x-hidden overflow-y-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
-          <div class="item-tag absolute left-2 mt-2 flex justify-start flex-col gap-y-3">
-            <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-green-600 ">10% Discount</span>
-          </div>
-          <div class="product-view absolute">
-            <button class="view-icon openModalBtn"> <i
-                class="ri-eye-line transform duration-300 hover:bg-blue-700 hover:text-white bg-gray-400 p-3 rounded-full text-2xl"></i>
-            </button>
-          </div>
-          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
-            <img class="w-96"
-              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
-              alt="">
-          </div>
-          <div class="product-info mt-4 p-7 ">
-            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
-            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
-            <div class="stock flex justify-start gap-x-5">
-              <i class="ri-check-line text-blue-700"></i>
-              <p class="text-blue-700">In Stock</p>
-            </div>
-            <div class="price my-2 flex justify-between mr-20">
-              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
-                  class="amount">1900</span>
-              </p>
-              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
-            </div>
-            <button
-              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
-              To
-              Cart</button>
-            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
-          </div>
-        </div>
-        <!-- single item -->
-        <div
-          class="woocommerce-item rounded-lg overflow-x-hidden overflow-y-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
-          <div class="item-tag absolute left-2 mt-2 flex justify-start flex-col gap-y-3">
-            <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-green-600 ">10% Discount</span>
-            <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-pink-600 ">Tranding</span>
-          </div>
-          <div class="product-view absolute">
-            <button class="view-icon openModalBtn"> <i
-                class="ri-eye-line transform duration-300 hover:bg-blue-700 hover:text-white bg-gray-400 p-3 rounded-full text-2xl"></i>
-            </button>
-          </div>
-          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
-            <img class="w-96"
-              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
-              alt="">
-          </div>
-          <div class="product-info mt-4 p-7 ">
-            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
-            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
-            <div class="stock flex justify-start gap-x-5">
-              <i class="ri-check-line text-blue-700"></i>
-              <p class="text-blue-700">In Stock</p>
-            </div>
-            <div class="price my-2 flex justify-between mr-20">
-              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
-                  class="amount">1900</span>
-              </p>
-              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
-            </div>
-            <button
-              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
-              To
-              Cart</button>
-            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
-          </div>
-        </div>
-        <!-- single item -->
-        <div
-          class="woocommerce-item rounded-lg overflow-x-hidden overflow-y-hidden w-72 relative shadow-lg hover:shadow-2xl transform duration-300">
-          <div class="item-tag absolute left-2 mt-2 flex justify-start flex-col gap-y-3">
-            <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-orange-600 ">Fetured</span>
-          </div>
-          <div class="product-view absolute">
-            <button class="view-icon openModalBtn"> <i
-                class="ri-eye-line transform duration-300 hover:bg-blue-700 hover:text-white bg-gray-400 p-3 rounded-full text-2xl"></i>
-            </button>
-          </div>
-          <div class="product-images h-70  border-dashed border-b-2 border-gray-300 ">
-            <img class="w-96"
-              src="https://woodmart.xtemos.com/mega-electronics/wp-content/uploads/sites/9/2022/10/apple-macbook-pro-16-silver-2.jpg"
-              alt="">
-          </div>
-          <div class="product-info mt-4 p-7 ">
-            <a class="product-name text-xl font-medium text-gray-800" href="#">Apple Mackbook pro</a>
-            <a class="product-category text-sm text-gray-500" href="#">Apple Mackbook</a>
-            <div class="stock flex justify-start gap-x-5">
-              <i class="ri-check-line text-blue-700"></i>
-              <p class="text-blue-700">In Stock</p>
-            </div>
-            <div class="price my-2 flex justify-between mr-20">
-              <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
-                  class="amount">1900</span>
-              </p>
-              <p class="sell-price"><span class="currency">$</span><span class="amount">1700</span></p>
-            </div>
-            <button
-              class="add-to-cart py-2 w-full rounded-md  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
-              To
-              Cart</button>
-            <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
-          </div>
-        </div>
+
+
       </div>
     </div>
 
     <!-- single-product-show-modal -->
-    <div id="modal" class="modal w-8/12 h-fit">
-      <div class="modal-content h-fit overflow-scroll">
-        <span id="closeModalBtn" class="close">&times;</span>
-        <div class="product-details w-full flex justify-between items-center flex-wrap flex-shrink">
-          <div class="left-side lg:flex-1">
-            <div class="item-tag left-2 mt-2 flex justify-start flex-col gap-y-3">
-              <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-yellow-500">New</span>
-              <span class="text-white rounded-full w-fit font-medium px-2 py-1 bg-red-600 ">Hot</span>
-            </div>
-            <img class="w-full"
-              src="https://a6n4d3q9.rocketcdn.me/mega-electronics/wp-content/uploads/sites/9/2022/10/macbook-pro.jpg"
-              alt="">
-          </div>
-          <div class="right-side lg:flex-1">
-            <div class="right-top">
-              <div class="name-details">
-                <div class="product-info mt-4 p-7 ">
-                  <div class="name-category">
-                    <a class="product-name text-xl w-full block font-medium text-gray-800" href="#">Apple Mackbook
-                      pro</a>
-                    <a class="product-category text-sm w-full block text-gray-500" href="#">Apple Mackbook</a>
-                  </div>
-                  <div class="stock flex justify-start gap-x-5">
-                    <i class="ri-check-line text-blue-700"></i>
-                    <p class="text-blue-700">In Stock</p>
-                  </div>
-                  <div class="price my-2 flex justify-between mr-20">
-                    <p class="reguler-price"><span class="currency">$</span><span style="text-decoration: line-through;"
-                        class="amount">1900</span>
-                    </p>
-                    <p class="sell-price text-blue-600 text-4xl"><span class="currency">$</span><span
-                        class="amount">1700</span></p>
-                  </div>
-                  <p class="sku my-2 text-gray-400"><span>SKU</span>: <span>39587</span></p>
+    <div id="modal" class="modal w-8/12 h-fit overflow-scroll lg:overflow-visible">
 
-                  <div class="buying-option flex justify-between gap-4 items-center flex-wrap">
-                    <button
-                      class="add-to-cart py-2 rounded-md px-6  bg-blue-700  hover:bg-blue-900 transform duration-300 text-white font-medium text-sm">Add
-                      To
-                      Cart</button>
-                    <button
-                      class="add-to-cart py-2  px-6 rounded-md  bg-orange-700  hover:bg-orange-900 transform duration-300 text-white font-medium text-sm">Buy
-                      Now</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-description">
-            <h3 class="text-2xl text-gray-700 my-8">Product Description</h3>
-            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus eius fuga aut eos nostrum
-              facilis illum, iure sapiente excepturi quam. Deleniti sint et ab consequatur sequi, hic labore quisquam
-              delectus modi facilis commodi accusantium, aliquid optio necessitatibus doloremque. Eius, ab illo? Aliquam
-              provident reiciendis laudantium consequuntur inventore animi ad?</p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
-  <script src="./public/src/js/data.js"></script>
   <script src="./public/src/js/functions.js"></script>
   <script src="./public/src/js/index.js"></script>
+  <script src="./public/src/js/main.js"></script>
+
 
 </body>
 

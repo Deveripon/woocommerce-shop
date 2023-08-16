@@ -1,0 +1,51 @@
+// .woocommerce-item:hover.product-view button.active {
+//   position: relative;
+//   top: 35%;
+//   left: 39%;
+//   display: block;
+// }
+
+.woocommerce-item {
+  .product-view {
+    height: 0%;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.5);
+    transition: 0.2s linear;
+    box-sizing: border-box;
+
+    button {
+      position: relative;
+      top: 0%;
+      left: 39%;
+      display: none;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.01);
+
+    .product-view {
+      height: 50%;
+      width: 100%;
+      background-color: rgba(0, 255, 255, 0.5);
+      transition: 0.2s linear;
+      box-sizing: border-box;
+
+      button {
+        position: relative;
+        top: 35%;
+        left: 39%;
+        display: block;
+      }
+    }
+
+
+  }
+}
+
+.modal-content {
+  img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+}

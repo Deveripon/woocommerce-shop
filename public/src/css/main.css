@@ -1,0 +1,71 @@
+.menu-left>ul>li.active {
+  background: rgba(120, 119, 121, 0.262) !important;
+  color: #0f21e5;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: thin !important;
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5361fdaf;
+  border-radius: 10px;
+  scrollbar-width: thin;
+
+}
+
+
+
+/* sindle product modal styling */
+/* Styles for modal container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.woocommerce-item .product-images {
+  height: 300px;
+}
+
+.woocommerce-item .product-images img {
+  width: 100% !important;
+  height: 100% !important;
+  padding-bottom: 20px;
+  object-fit: contain;
+}
+
+/* Styles for modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 5px;
+
+}
+
+/* Styles for close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
